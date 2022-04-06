@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3237A9FFC80D98A0BF88DA70 /* Pods_CocoaPodsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D13DD6A5400F6A1D786D7C3 /* Pods_CocoaPodsApp.framework */; };
+		A532341C27FDB66900958A5A /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A532341B27FDB66900958A5A /* Animation.swift */; };
+		A532341E27FDCCF600958A5A /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A532341D27FDCCF600958A5A /* DataManager.swift */; };
 		A5FB7F9827FC59F6001A622F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FB7F9727FC59F6001A622F /* AppDelegate.swift */; };
 		A5FB7F9A27FC59F6001A622F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FB7F9927FC59F6001A622F /* SceneDelegate.swift */; };
 		A5FB7F9C27FC59F6001A622F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FB7F9B27FC59F6001A622F /* ViewController.swift */; };
@@ -20,6 +22,8 @@
 		1CD0F6A1BBD95E22AA03D06B /* Pods-CocoaPodsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaPodsApp.debug.xcconfig"; path = "Target Support Files/Pods-CocoaPodsApp/Pods-CocoaPodsApp.debug.xcconfig"; sourceTree = "<group>"; };
 		1D13DD6A5400F6A1D786D7C3 /* Pods_CocoaPodsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CocoaPodsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AC124E9E3333B72C1143109 /* Pods-CocoaPodsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaPodsApp.release.xcconfig"; path = "Target Support Files/Pods-CocoaPodsApp/Pods-CocoaPodsApp.release.xcconfig"; sourceTree = "<group>"; };
+		A532341B27FDB66900958A5A /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		A532341D27FDCCF600958A5A /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		A5FB7F9427FC59F6001A622F /* CocoaPodsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaPodsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5FB7F9727FC59F6001A622F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5FB7F9927FC59F6001A622F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +54,57 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A532341F27FDDB4E00958A5A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A5FB7F9727FC59F6001A622F /* AppDelegate.swift */,
+				A5FB7F9927FC59F6001A622F /* SceneDelegate.swift */,
+				A5FB7FA527FC59F7001A622F /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A532342027FDDB6100958A5A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A532341B27FDB66900958A5A /* Animation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A532342127FDDB6A00958A5A /* DataManagers */ = {
+			isa = PBXGroup;
+			children = (
+				A532341D27FDCCF600958A5A /* DataManager.swift */,
+			);
+			path = DataManagers;
+			sourceTree = "<group>";
+		};
+		A532342227FDDB7700958A5A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A5FB7F9B27FC59F6001A622F /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A532342327FDDB8200958A5A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A5FB7FA027FC59F7001A622F /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A532342427FDDB8C00958A5A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				A5FB7F9D27FC59F6001A622F /* Main.storyboard */,
+				A5FB7FA227FC59F7001A622F /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		A5FB7F8B27FC59F6001A622F = {
 			isa = PBXGroup;
 			children = (
@@ -71,13 +126,12 @@
 		A5FB7F9627FC59F6001A622F /* CocoaPodsApp */ = {
 			isa = PBXGroup;
 			children = (
-				A5FB7F9727FC59F6001A622F /* AppDelegate.swift */,
-				A5FB7F9927FC59F6001A622F /* SceneDelegate.swift */,
-				A5FB7F9B27FC59F6001A622F /* ViewController.swift */,
-				A5FB7F9D27FC59F6001A622F /* Main.storyboard */,
-				A5FB7FA027FC59F7001A622F /* Assets.xcassets */,
-				A5FB7FA227FC59F7001A622F /* LaunchScreen.storyboard */,
-				A5FB7FA527FC59F7001A622F /* Info.plist */,
+				A532342427FDDB8C00958A5A /* Storyboards */,
+				A532342127FDDB6A00958A5A /* DataManagers */,
+				A532342227FDDB7700958A5A /* Controllers */,
+				A532342027FDDB6100958A5A /* Models */,
+				A532341F27FDDB4E00958A5A /* App */,
+				A532342327FDDB8200958A5A /* Resources */,
 			);
 			path = CocoaPodsApp;
 			sourceTree = "<group>";
@@ -88,7 +142,6 @@
 				1CD0F6A1BBD95E22AA03D06B /* Pods-CocoaPodsApp.debug.xcconfig */,
 				4AC124E9E3333B72C1143109 /* Pods-CocoaPodsApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -208,7 +261,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5FB7F9C27FC59F6001A622F /* ViewController.swift in Sources */,
+				A532341E27FDCCF600958A5A /* DataManager.swift in Sources */,
 				A5FB7F9827FC59F6001A622F /* AppDelegate.swift in Sources */,
+				A532341C27FDB66900958A5A /* Animation.swift in Sources */,
 				A5FB7F9A27FC59F6001A622F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,7 +416,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = L7M6FD6244;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CocoaPodsApp/Info.plist;
+				INFOPLIST_FILE = CocoaPodsApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -390,7 +445,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = L7M6FD6244;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CocoaPodsApp/Info.plist;
+				INFOPLIST_FILE = CocoaPodsApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
