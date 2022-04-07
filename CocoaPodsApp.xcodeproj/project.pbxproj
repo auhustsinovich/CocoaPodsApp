@@ -72,20 +72,20 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		A532342127FDDB6A00958A5A /* DataManagers */ = {
+		A532342127FDDB6A00958A5A /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				A532341D27FDCCF600958A5A /* DataManager.swift */,
 			);
-			path = DataManagers;
+			path = Services;
 			sourceTree = "<group>";
 		};
-		A532342227FDDB7700958A5A /* Controllers */ = {
+		A532342227FDDB7700958A5A /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				A5FB7F9B27FC59F6001A622F /* ViewController.swift */,
 			);
-			path = Controllers;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		A532342327FDDB8200958A5A /* Resources */ = {
@@ -127,8 +127,8 @@
 			isa = PBXGroup;
 			children = (
 				A532342427FDDB8C00958A5A /* Storyboards */,
-				A532342127FDDB6A00958A5A /* DataManagers */,
-				A532342227FDDB7700958A5A /* Controllers */,
+				A532342127FDDB6A00958A5A /* Services */,
+				A532342227FDDB7700958A5A /* ViewControllers */,
 				A532342027FDDB6100958A5A /* Models */,
 				A532341F27FDDB4E00958A5A /* App */,
 				A532342327FDDB8200958A5A /* Resources */,

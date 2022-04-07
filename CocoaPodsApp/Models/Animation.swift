@@ -8,11 +8,11 @@
 
 struct Animation {
     
-    var preset: String
-    var curve: String
-    var force: Float
-    var duration: Float
-    var delay: Float
+    let preset: String
+    let curve: String
+    let force: Float
+    let duration: Float
+    let delay: Float
     
     var description: String {
         return """

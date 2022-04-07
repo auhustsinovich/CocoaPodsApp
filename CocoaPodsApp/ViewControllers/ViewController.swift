@@ -14,6 +14,11 @@ class ViewController: UIViewController {
     
     private var animation = Animation.getRandomAnimation()
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        animationLabel.text = animation.description
+    }
+    
     @IBAction func animationButtonPressed(_ sender: SpringButton) {
         
         animationLabel.text = animation.description
@@ -29,4 +34,3 @@ class ViewController: UIViewController {
         sender.setTitle("Run \(animation.preset)", for: .normal)
     }
 }
-
